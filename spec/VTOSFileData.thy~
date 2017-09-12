@@ -1,0 +1,28 @@
+theory VTOSFileData
+imports Main  "~~/src/HOL/Word/Word"
+begin
+
+type_synonym 'a word = "'a  word"
+type_synonym  word8 =  "8 word"
+type_synonym word16 = "16 word"
+type_synonym word32 = "32 word"
+type_synonym word64 = "64 word"
+
+record inode =
+  i_mode       ::   word16 (*unsigned short *)
+  i_nlinks     ::   word16
+  i_uid        ::   word16
+  i_gid        ::   word8
+  i_size       ::   word32
+  i_atime      ::   word32
+  i_mtime      ::   word32
+  i_ctime      ::   word32
+  
+  
+  
+  
+ 
+
+
+
+end
